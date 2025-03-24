@@ -1,3 +1,14 @@
-[gd_scene format=3 uid="uid://cc5afpce2hh"]
+[gd_scene load_steps=2 format=3 uid="uid://cc5afpce2hh"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_3a3bc"]
 
 [node name="main" type="Node2D"]
+
+[node name="character" type="CharacterBody2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="character"]
+shape = SubResource("RectangleShape2D_3a3bc")
+
+[node name="Sprite2D" type="Sprite2D" parent="character"]
+
+[node name="Camera2D" type="Camera2D" parent="character"]
